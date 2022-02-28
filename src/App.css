@@ -1,38 +1,81 @@
-.App {
+body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(242, 235, 243) 0%,
+    rgb(234, 241, 249) 90.1%
+  );
+  font-family: "Josefin Sans", sans-serif;
+  color: #77529e;
+}
+
+.cover {
+  background-color: rgb(165, 189, 253, 0.17);
+  border-radius: 12px;
+  margin-top: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.main-data {
+  margin-top: 32px;
+}
+
+.container {
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px rgba(117, 117, 117, 0.2);
+  display: block;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding-left: 12px;
+  padding-right: 12px;
+  max-width: 700px;
+}
+
+.container-fluid {
+  margin-top: 20px;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col .sunday {
+  background-color: rgb(165, 189, 253, 0.17);
+  border-radius: 12px;
+  font-size: 12pt;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.temp-min {
+  color: #77529e;
+  opacity: 50%;
+}
+
+.forecastIcon {
+  width: 30px;
+}
+
+.signature {
+  display: block;
+  font-weight: 300;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.open-source {
+  color: #77529e;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 576px) {
+  .container {
+    margin-top: 0;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  #weather-forecast {
+    margin-bottom: 10px;
   }
 }
