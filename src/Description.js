@@ -1,5 +1,5 @@
 import React from "react";
-import Icon from "../weather-icons/01d.sgv";
+import Icon from "./weather-icons/01d.svg";
 import "./Description.css";
 
 export default function Description() {

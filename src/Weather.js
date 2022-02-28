@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../images/01d.png";
+import Image from "./images/01d.png";
 import "./Weather.css";
 
 export default function Weather() {
