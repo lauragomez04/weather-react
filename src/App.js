@@ -28,7 +28,7 @@ function App() {
         <div class="signature">
           <a
             className="open-source"
-            href="https://github.com/lauragomez04/weather-app"
+            href="https://github.com/lauragomez04/weather-react"
             target="_blank"
             rel="noreferrer"
           >
