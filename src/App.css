@@ -1,43 +1,3 @@
-.App .cover {
-  background-color: rgb(165, 189, 253, 0.17);
-  border-radius: 12px;
-  margin-top: 0px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.App .main-data {
-  margin-top: 32px;
-}
-
-.App .container {
-  background-color: rgb(255, 255, 255, 0.6);
-  border-radius: 12px;
-  box-shadow: 5px 5px 10px rgba(117, 117, 117, 0.2);
-  display: block;
-  margin: 0 auto;
-  margin-top: 70px;
-  padding-left: 12px;
-  padding-right: 12px;
-  max-width: 700px;
-}
-
-.App .container-fluid {
-  margin-top: 30px;
-  text-align: center;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.App .temp-min {
-  color: #77529e;
-  opacity: 50%;
-}
-
-.App .forecastIcon {
-  width: 30px;
-}
-
 .App .signature {
   display: block;
   font-weight: 300;
@@ -47,14 +7,4 @@
 
 .App .open-source {
   color: #77529e;
-}
-
-@media (max-width: 576px) {
-  .App .container {
-    margin-top: 0;
-  }
-
-  #weather-forecast {
-    margin-bottom: 10px;
-  }
 }

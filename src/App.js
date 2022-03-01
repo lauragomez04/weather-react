@@ -1,32 +1,12 @@
 import "./App.css";
 
 import Weather from "./Weather";
-import Description from "./Description";
-import Date from "./Date";
-import Humidity from "./Humidity";
-import Forecast from "./Forecast";
 
 function App() {
   return (
     <div className="App">
       <body>
-        <div className="container">
-          <div className="row">
-            <div className="col cover">
-              <Weather />
-            </div>
-            <div className="col main-data">
-              <Description />
-              <Date />
-              <div className="container-2">
-                <Humidity />
-              </div>
-              <div class="container-fluid" id="weather-forecast">
-                <Forecast />
-              </div>
-            </div>
-          </div>
-        </div>
+        <Weather />
         <br />
         <div className="signature">
           <a
