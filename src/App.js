@@ -1,6 +1,5 @@
-import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
-import Search from "./Search";
+
 import Weather from "./Weather";
 import Description from "./Description";
 import Date from "./Date";
@@ -14,7 +13,6 @@ function App() {
         <div className="container">
           <div className="row">
             <div className="col cover">
-              <Search />
               <Weather />
             </div>
             <div className="col main-data">

@@ -1,28 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-
-body {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(242, 235, 243) 0%,
-    rgb(234, 241, 249) 90.1%
-  );
-  font-family: "Josefin Sans", sans-serif;
-  color: #77529e;
-}
-
-.cover {
+.App .cover {
   background-color: rgb(165, 189, 253, 0.17);
   border-radius: 12px;
   margin-top: 0px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
-.main-data {
+.App .main-data {
   margin-top: 32px;
 }
 
-.container {
+.App .container {
   background-color: rgb(255, 255, 255, 0.6);
   border-radius: 12px;
   box-shadow: 5px 5px 10px rgba(117, 117, 117, 0.2);
@@ -34,46 +22,35 @@ body {
   max-width: 700px;
 }
 
-.container-fluid {
-  margin-top: 20px;
+.App .container-fluid {
+  margin-top: 30px;
   text-align: center;
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.col .sunday {
-  background-color: rgb(165, 189, 253, 0.17);
-  border-radius: 12px;
-  font-size: 12pt;
-  font-weight: 300;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: 3px;
-  margin-right: 3px;
-}
-
-.temp-min {
+.App .temp-min {
   color: #77529e;
   opacity: 50%;
 }
 
-.forecastIcon {
+.App .forecastIcon {
   width: 30px;
 }
 
-.signature {
+.App .signature {
   display: block;
   font-weight: 300;
   margin: 0 auto;
   text-align: center;
 }
 
-.open-source {
+.App .open-source {
   color: #77529e;
 }
 
 @media (max-width: 576px) {
-  .container {
+  .App .container {
     margin-top: 0;
   }
 

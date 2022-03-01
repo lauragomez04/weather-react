@@ -2,7 +2,6 @@ import React from "react";
 
 import ReactAnimatedWeather from "react-animated-weather";
 import "./Description.css";
-import "bootstrap/dist/css/bootstrap.css";
 
 export default function Description() {
   return (

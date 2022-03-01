@@ -1,6 +1,5 @@
 import React from "react";
 import "./Date.css";
-import "bootstrap/dist/css/bootstrap.css";
 
 export default function Date() {
   return (

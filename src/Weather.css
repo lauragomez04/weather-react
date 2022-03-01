@@ -1,26 +1,49 @@
-h1,
-h2 {
-  text-align: center;
-  margin-top: -15px;
+form .form-control {
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-weight: 300;
 }
 
-h1 {
+form .form-control:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+form .input-group-text {
+  background-color: rgb(255, 255, 255);
+  color: #77529e;
+}
+
+form .on-location:hover {
+  background-color: rgb(165, 189, 253, 0.01);
+}
+
+.Weather h1 {
+  text-align: center;
+}
+
+.Weather .current-temperature {
+  margin-top: -15px;
   font-size: 40pt;
   font-weight: 600;
   margin-bottom: 0px;
 }
 
-h2 {
+.Weather h2 {
   font-weight: 300;
+  text-align: center;
+  margin-top: -15px;
 }
 
-.illustration {
+.Weather .illustration {
   display: block;
   margin: 0 auto;
   max-width: 300px;
 }
 
-.units {
+.Weather .units {
   font-size: 10px;
   margin-top: -100px;
   position: relative;
