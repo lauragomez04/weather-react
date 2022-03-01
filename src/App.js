@@ -4,6 +4,7 @@ import Weather from "./Weather";
 import Description from "./Description";
 import Date from "./Date";
 import Humidity from "./Humidity";
+import Forecast from "./Forecast";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
               <Date />
               <div className="container-2">
                 <Humidity />
+              </div>
+              <div class="container-fluid" id="weather-forecast">
+                <Forecast />
               </div>
             </div>
           </div>

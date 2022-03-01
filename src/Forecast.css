@@ -1,0 +1,16 @@
+.forecast {
+  background-color: rgb(165, 189, 253, 0.17);
+  border-radius: 6px;
+  font-weight: 300;
+  margin: 5px;
+  padding: 4px;
+}
+
+.low-temp {
+  opacity: 50%;
+}
+
+.high-temp {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
