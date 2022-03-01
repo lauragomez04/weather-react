@@ -6,7 +6,7 @@ export default function Forecast() {
   return (
     <div className="row">
       <div className="col forecast">
-        <p>Sun</p>
+        <p className="day">SUN</p>
         <ReactAnimatedWeather
           icon="CLEAR_DAY"
           color="#77529e"
@@ -18,7 +18,7 @@ export default function Forecast() {
         <p className="low-temp">9º</p>
       </div>
       <div className="col forecast">
-        <p>Mon</p>
+        <p className="day">MON</p>
         <ReactAnimatedWeather
           icon="RAIN"
           color="#77529e"
@@ -31,7 +31,7 @@ export default function Forecast() {
         <p className="low-temp">10º</p>
       </div>
       <div className="col forecast">
-        <p>Tue</p>
+        <p className="day">TUE</p>
         <ReactAnimatedWeather
           icon="PARTLY_CLOUDY_DAY"
           color="#77529e"
@@ -44,7 +44,7 @@ export default function Forecast() {
         <p className="low-temp">8º</p>
       </div>
       <div className="col forecast">
-        <p>Wed</p>
+        <p className="day">WED</p>
         <ReactAnimatedWeather
           icon="CLOUDY"
           color="#77529e"
@@ -57,7 +57,7 @@ export default function Forecast() {
         <p className="low-temp">11º</p>
       </div>
       <div className="col forecast">
-        <p>Thu</p>
+        <p className="day">THU</p>
         <ReactAnimatedWeather
           icon="WIND"
           color="#77529e"

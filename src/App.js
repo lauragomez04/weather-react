@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import Search from "./Search";
 import Weather from "./Weather";
@@ -29,7 +30,7 @@ function App() {
           </div>
         </div>
         <br />
-        <div class="signature">
+        <div className="signature">
           <a
             className="open-source"
             href="https://github.com/lauragomez04/weather-react"

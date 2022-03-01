@@ -2,15 +2,20 @@
   background-color: rgb(165, 189, 253, 0.17);
   border-radius: 6px;
   font-weight: 300;
-  margin: 5px;
+  margin: 4px;
   padding: 4px;
 }
 
 .low-temp {
   opacity: 50%;
+  margin-bottom: 4px;
 }
 
 .high-temp {
   margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.day {
   margin-top: 4px;
 }
