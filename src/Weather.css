@@ -90,13 +90,6 @@ form .on-location:hover {
   font-size: 14pt;
 }
 
-.Weather .last-update {
-  opacity: 40%;
-  font-size: 10pt;
-  position: relative;
-  top: -3px;
-}
-
 .Weather .container-2 {
   background-color: rgb(165, 189, 253, 0.17);
   border-radius: 12px;

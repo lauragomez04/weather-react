@@ -4,7 +4,7 @@ import Weather from "./Weather";
 
 function App() {
   return (
-    <body className="App">
+    <div className="App">
       <Weather />
       <br />
       <div className="signature">
@@ -18,7 +18,7 @@ function App() {
         </a>{" "}
         by Laura Gómez
       </div>
-    </body>
+    </div>
   );
 }
 

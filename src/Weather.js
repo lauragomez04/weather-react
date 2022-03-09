@@ -6,12 +6,10 @@ import Image from "./images/01d.png";
 import "./Weather.css";
 
 export default function Weather() {
-  const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
-    console.log(response);
-    setReady(true);
     setWeatherData({
+      ready: true,
       temperature: response.data.main.temp,
       city: response.data.name,
       country: response.data.sys.country,
@@ -23,7 +21,7 @@ export default function Weather() {
     });
   }
 
-  if (ready) {
+  if (weatherData.ready) {
     return (
       <div className="Weather">
         <div className="container">
@@ -80,7 +78,6 @@ export default function Weather() {
               <div className="date-format">
                 <div className="time">18:06</div>
                 <div className="date">sat, 19 feb.</div>
-                <div className="last-update">Last updated</div>
               </div>
               <div className="container-2">
                 <div className="row">
@@ -115,7 +112,7 @@ export default function Weather() {
     );
   } else {
     let city = "New York";
-    let apiKey = "ce367ae683ecd406fc22d9de1e411068";
+    let apiKey = "362d842884ac0563209bde57166078ce";
     let units = "metric";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
     axios.get(apiUrl).then(handleResponse);
