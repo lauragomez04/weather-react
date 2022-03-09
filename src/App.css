@@ -6,6 +6,9 @@ body {
     rgb(242, 235, 243) 0%,
     rgb(234, 241, 249) 90.1%
   );
+}
+
+.App {
   font-family: "Josefin Sans", sans-serif;
   color: #77529e;
 }

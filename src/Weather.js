@@ -3,6 +3,7 @@ import axios from "axios";
 import Forecast from "./Forecast";
 import ReactAnimatedWeather from "react-animated-weather";
 import Image from "./images/01d.png";
+import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 
 export default function Weather() {
@@ -18,6 +19,7 @@ export default function Weather() {
       maxTemp: response.data.main.temp_max,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
+      date: new Date(response.data.dt * 1000),
     });
   }
 
@@ -76,8 +78,7 @@ export default function Weather() {
                 <h3 className="description">{weatherData.description}</h3>
               </div>
               <div className="date-format">
-                <div className="time">18:06</div>
-                <div className="date">sat, 19 feb.</div>
+                <FormattedDate date={weatherData.date} />
               </div>
               <div className="container-2">
                 <div className="row">
@@ -111,7 +112,7 @@ export default function Weather() {
       </div>
     );
   } else {
-    let city = "New York";
+    let city = "Lisbon";
     let apiKey = "362d842884ac0563209bde57166078ce";
     let units = "metric";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
