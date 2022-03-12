@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import WeatherInfo from "./WeatherInfo";
+import TemperatureConversion from "./TemperatureConversion";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -69,20 +70,7 @@ export default function Weather(props) {
                 alt={weatherData.description}
                 className="img-fluid illustration"
               />
-              <h1>
-                <span className="current-temperature">
-                  {Math.round(weatherData.temperature)}
-                </span>
-                <span className="units">
-                  <a className="active celsius" href="/">
-                    ºC
-                  </a>
-                  |
-                  <a className="fahrenheit" href="/">
-                    ºF
-                  </a>
-                </span>
-              </h1>
+              <TemperatureConversion celsius={weatherData.temperature} />
               <h2>
                 {weatherData.city}, {weatherData.country}
               </h2>
