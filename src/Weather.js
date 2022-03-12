@@ -66,7 +66,7 @@ export default function Weather(props) {
               </form>
               <img
                 src={`../images/${weatherData.icon}.png`}
-                alt="sun"
+                alt={weatherData.description}
                 className="img-fluid illustration"
               />
               <h1>

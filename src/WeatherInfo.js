@@ -10,7 +10,7 @@ export default function WeatherInfo(props) {
         <img
           src={`../weather-icons/${props.data.icon}.svg`}
           className="icon"
-          alt="sunny"
+          alt={props.data.description}
         />
         <h3 className="description">{props.data.description}</h3>
       </div>
