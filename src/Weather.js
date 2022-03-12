@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Image from "./images/01d.png";
+
 import WeatherInfo from "./WeatherInfo";
 import "./Weather.css";
 
@@ -19,6 +19,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
+      icon: response.data.weather[0].icon,
     });
   }
 
@@ -63,7 +64,11 @@ export default function Weather(props) {
                   </button>
                 </div>
               </form>
-              <img src={Image} alt="" className="img-fluid illustration" />
+              <img
+                src={`../images/${weatherData.icon}.png`}
+                alt="sun"
+                className="img-fluid illustration"
+              />
               <h1>
                 <span className="current-temperature">
                   {Math.round(weatherData.temperature)}

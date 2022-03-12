@@ -58,12 +58,6 @@ form .on-location:hover {
   top: -25px;
 }
 
-.Weather .mainIcon {
-  display: block;
-  width: 60px;
-  height: 60px;
-}
-
 .Weather .description {
   font-size: 18pt;
   font-weight: 300;

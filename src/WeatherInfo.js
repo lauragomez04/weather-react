@@ -1,17 +1,16 @@
 import React from "react";
 import Forecast from "./Forecast";
 import FormattedDate from "./FormattedDate";
-import ReactAnimatedWeather from "react-animated-weather";
+import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <div>
-        <ReactAnimatedWeather
-          icon="CLEAR_DAY"
-          color="#77529e"
-          size={50}
-          animate={true}
+        <img
+          src={`../weather-icons/${props.data.icon}.svg`}
+          className="icon"
+          alt="sunny"
         />
         <h3 className="description">{props.data.description}</h3>
       </div>
