@@ -4,6 +4,7 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import TemperatureConversion from "./TemperatureConversion";
 import "./Weather.css";
+import WeatherOnPosition from "./WeatherOnPosition";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -61,9 +62,7 @@ export default function Weather(props) {
                   <button className="input-group-text border-0">
                     <i className="bi bi-search"></i>
                   </button>
-                  <button className="input-group-text border-0 on-location">
-                    <i className="bi bi-geo-alt"></i>
-                  </button>
+                  <WeatherOnPosition currentLocation={handleResponse} />
                 </div>
               </form>
               <img

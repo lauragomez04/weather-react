@@ -16,7 +16,11 @@ form .input-group-text {
   color: #77529e;
 }
 
-form .on-location:hover {
+form .on-location {
+  font-size: 1.5rem;
+}
+
+.on-location:hover {
   background-color: rgb(165, 189, 253, 0.01);
 }
 
