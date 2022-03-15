@@ -13,9 +13,14 @@
 
 .high-temp {
   margin-bottom: 4px;
-  margin-top: 4px;
+  margin-top: 10px;
 }
 
 .day {
   margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.forecast-icon {
+  width: 30px;
 }

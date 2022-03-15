@@ -1,5 +1,5 @@
 import React from "react";
-import Forecast from "./Forecast";
+import WeatherForecast from "./WeatherForecast";
 import FormattedDate from "./FormattedDate";
 import "./WeatherInfo.css";
 
@@ -41,7 +41,7 @@ export default function WeatherInfo(props) {
         </div>
       </div>
       <div className="container-fluid" id="weather-forecast">
-        <Forecast />
+        <WeatherForecast coordinates={props.data.coordinates} />
       </div>
     </div>
   );
